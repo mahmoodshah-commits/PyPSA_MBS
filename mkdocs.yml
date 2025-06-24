@@ -68,6 +68,7 @@ nav:
     - examples/transformer_example.ipynb
     - examples/unit-commitment.ipynb
     - examples/reserve-power.ipynb
+    - examples/stochastic-optimization.ipynb
   - Sector Coupling:
     - examples/sector-coupling-single-node.ipynb
     - examples/battery-electric-vehicle-charging.ipynb
@@ -298,10 +299,9 @@ plugins:
               - pypsa.components._types.stores.Stores.add
               - pypsa.components._types.sub_networks.SubNetworks.add
               - pypsa.components._types.transformers.Transformers.add
-
-# - mkdocs-jupyter:
-#     execute: false
-#     include: ["examples/*.ipynb"]
+- mkdocs-jupyter:
+    execute: true
+    include: ["examples/*.ipynb"]
 - redirects:
     redirect_maps:
       'home/release-notes.md': 'release-notes.md'

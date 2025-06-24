@@ -216,8 +216,6 @@ for tech in ["solar", "wind", "gas", "lignite"]:
 3. **Parameter Updates**: Modify scenario-specific parameters (e.g., gas prices) 
 4. **Optimization**: Single call to `optimize()` solves full stochastic problem
 
-TODO: add this to the PyPSA documentation examples with nice formatting and reference here.
-
 ### Model Structure and Variables
 
 PyPSA creates a stochastic optimization model by reformulating the two-stage problem as a large-scale deterministic equivalent with scenario-indexed variables and constraints. The model structure can be inspected using PyPSA's optimization module:
@@ -317,14 +315,6 @@ if kwargs and scenarios is not None:
 if scenarios.sum() != 1:
     raise ValueError(f"Sum of weights must equal 1. Current sum: {scenarios.sum()}")
 ```
-
-
-### Planned Consistency Checks
-
-**TODO**: Stochastic network validation will be added to `pypsa/consistency.py` including:
-- Scenario-specific parameter completeness checks
-- Time series alignment across scenarios
-- etc
 
 ### Unit Tests for Stochastic Functionality
 
@@ -510,6 +500,12 @@ Memory consumption scales **super-linearly** with scenario count due to:
 
 **PyPSA-SMS++ Integration:**
 The [Resilient project](https://resilient-project.github.io/) is developing PyPSA-SMS++, a specialized API that will enable **advanced decomposition algorithms** integrated into PyPSA workflow. The goal is to support large-scale stochastic optimization problems directly within the PyPSA framework.
+
+## Practical Example
+
+For a comprehensive, hands-on demonstration of stochastic optimization in PyPSA, see the example notebook:
+
+**[Stochastic Optimization Example](../examples/stochastic-optimization.ipynb)**
 
 ## References
 
