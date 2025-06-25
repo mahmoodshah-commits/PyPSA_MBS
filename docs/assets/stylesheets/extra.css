@@ -32,3 +32,8 @@
   -webkit-mask-image: var(--md-admonition-icon--deprecation);
           mask-image: var(--md-admonition-icon--deprecation);
 }
+
+/* Maximum space for text block */
+.md-grid {
+  max-width: 65%;
+}

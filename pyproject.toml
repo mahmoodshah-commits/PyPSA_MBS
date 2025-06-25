@@ -69,17 +69,17 @@ dev = [
 ]
 docs = [    
     "mkdocs-material",
-    "mkdocs-obsidian-interactive-graph-plugin",
     "mkdocs-ezlinks-plugin",
     "mkdocs-autolinks-plugin",
     "mkdocs-redirects",
     "mkdocs-video",
     "mkdocs-git-revision-date-localized-plugin",
-    "mkdocs-open-in-new-tab",
+    "mkdocs-git-committers-plugin",
     "mkdocs-argref-plugin",
     "mkdocstrings-python",
     "mkdocs-jupyter",
     "cairosvg",
+    "pillow",
 ]
 
 # setuptools_scm settings
