@@ -484,16 +484,17 @@ assert "scenario" in n.generators_t.p.columns.get_level_values("scenario")
 
 The computational complexity of stochastic optimization in PyPSA exhibits distinct scaling characteristics that require careful consideration for large-scale applications.
 
-**Variable Scaling Properties:**
-- **Investment variables**: Scale as O(|components|) - scenario-independent by design
-- **Operational variables**: Scale as O(|scenarios| × |components| × |snapshots|) 
-- **Total problem size**: Dominated by operational variables in most realistic applications
+**Problem Scaling Properties**
 
-**Memory Requirements:**
-Memory consumption scales **super-linearly** with scenario count due to:
-- Linear growth in variable count: O(S × C × T) where S=scenarios, C=components, T=snapshots
-- Quadratic growth in constraint matrix density from scenario coupling
-- Solver working memory requirements scale non-linearly with problem size
+- **Investment variables**: Scale as O(|components|)
+- **Operational variables**: Scale as O(|scenarios| × |components| × |snapshots|)
+- **Constraint matrix structure**: The two-stage stochastic program produces a block-angular matrix. Its size grows linearly with the number of scenarios.
+
+**Memory consumption** increases with the number of scenarios due to:
+
+- Linear growth in the number of variables and constraints
+- Solver working memory requirements that may scale super-linearly, depending on the solution algorithm
+- Internal solver data structures (e.g. factorization fill-in, basis management) that can exhibit non-linear scaling behavior
 
 
 ### Advanced Decomposition Methods
