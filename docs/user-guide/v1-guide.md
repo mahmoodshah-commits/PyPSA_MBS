@@ -42,7 +42,7 @@ A new object called [`NetworkCollection`][pypsa.Network] has been added to the l
 ```python
 >>> pypsa.NetworkCollection([n_base, n_reference])
 NetworkCollection
-+-----------------
+-----------------
 Networks: 2
 Index name: 'network'
 Entries: ['Base Case', 'Reference Case']
@@ -61,12 +61,18 @@ Frankfurt Wind    Frankfurt      PQ         110.0  ...
 Frankfurt Gas     Frankfurt      PQ       80000.0  ...                
 
 [6 rows x 37 columns]
+
+# Opt-in to new components API
 >>> pypsa.options.legacy_components_api = False
+
+# n.generators will now return a Components object
 >>> n.generators
 'Generator' Components
 ----------------------
 Attached to PyPSA Network 'AC-DC-Meshed'
 Components: 6
+
+# Static data and more is still available
 >>> n.generators.static
                         bus control type    p_nom  ...  
 Generator                                          ...                                                              
