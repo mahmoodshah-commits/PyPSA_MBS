@@ -1,12 +1,12 @@
 # PyPSA Version 1.0
 
-With the release of PyPSA 1.0, the documentation has been completely overhauled and moved to the new URL: `https://docs.pypsa.org`. It is worth taking a look at the new documentation to find out about new features and those that have not yet been well documented so far.
+With the release of PyPSA 1.0, the documentation has been completely overhauled and moved to the new URL: [https://docs.pypsa.org](https://docs.pypsa.org). It is worth taking a look at the new documentation to find out about new features and those that have not yet been well documented so far.
 
 ## Features
 
 ### Stochastic Optimization
 
-PyPSA now supports **two-stage stochastic programming** with scenario trees out of the box, which allows users to optimize investment decisions (first-stage) that are robust across multiple possible future realizations (scenarios) of uncertain parameters. See [:material-bookshelf: User Guide](stochastic-optimization.md) and [:material-notebook-multiple: Example Notebook](/examples/stochastic-optimization.ipynb).
+PyPSA now supports **two-stage stochastic programming** with scenario trees out of the box, which allows users to optimize investment decisions (first-stage) that are robust across multiple possible future realizations (scenarios) of uncertain parameters. See [:material-bookshelf: User Guide](stochastic-optimization.md) and [:material-notebook-multiple: Example Notebook](stochastic-optimization.ipynb).
 
 ```python
 >>> n = pypsa.examples.ac_dc_meshed()
