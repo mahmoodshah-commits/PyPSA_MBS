@@ -7,11 +7,22 @@ hides:
 <!-- ## Upcoming Release
 
 !!! warning
-bddda7c6 (New Documentation Draft (#1211))
 
     The features listed below are not released yet, but will be part of the next release! 
     To use the features already you have to install the ``master`` branch, e.g. 
     ``pip install git+https://github.com/pypsa/pypsa``. -->
+
+
+## [**v1.0.0**](https://github.com/PyPSA/PyPSA/releases/tag/v1.0.0) <small>30th July 2025</small> 🎉 { id="v1.0.0" } 
+
+### PyPSA 1.0 is here!
+
+Check out [what's new](v1-guide.md).
+
+
+## [**v0.35.0**](https://github.com/PyPSA/PyPSA/releases/tag/v0.34.1) <small>22th June 2025</small> { id="v0.35.0" }
+
+### Features
 
 - New **interactive** plotting library (:octicons-git-pull-request-16:1189)
 
