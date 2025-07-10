@@ -1,4 +1,4 @@
-# PyPSA - Python for Power System Analysis
+# PyPSA - Python for Power System Analysis - MBS
 
 
 [![PyPI version](https://img.shields.io/pypi/v/pypsa.svg)](https://pypi.python.org/pypi/pypsa)
